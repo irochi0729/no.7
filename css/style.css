@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   @font-face {
+    font-family:'Jasper Daniels';
+    src: url('../font/Jasper Daniels.ttf');
+   
+   }
+   
+   
+body {background: #000000;font-family: 'NanumBarunGothic';font-weight: 550;}
+
+
+
+.header {width: 100%;height: 200px;font-family:'Jasper Daniels';font-weight: 400;}
+
+.header_box {width: 1040px; margin: 0 auto; position: relative;}
+
+.header .language { height:44px;float: left;  position: relative;top: 65px;}
+.header .language .lang{font-size: 21px;color: #fff;line-height: 30px;display: block;padding: 0 20px 0 10px;line-height: 44px;}
+.header .language .language_list {position: absolute; left: 100%;top: 0;display: flex;}
+.header .language .language_list li{display: none;font-size: 21px;}
+.header .language:hover .language_list li{display: block;}
+.header .language_list a {display: block; height: 100%; text-align: center;color: #fff;line-height: 44px;padding: 0 20px; }
+
+
+.header .login_box {width: 300px; height: 44px; float: right; display: flex; justify-content: flex-end;font-size: 21px;position: relative;top: 65px;gap: 21px;}
+.header .login_box a { display: flex; align-items: center; padding: 0 10px;color: #fff;}
+
+.header h1 { background: #000; position: absolute; top: 40px;left: 50%;margin-left: -111px;height: 83px;}
+.header h1 a{display: block;height: 100%;}
+.header h1 a img{}
+
+.header .nav { margin-top: 110px; display: flex; justify-content: center; align-items:center;float: left;width: 100%; }
+.header .nav li { font-size: 31px; position: relative;}
+.header .nav li a {padding: 13px 45px;display: block;color: #fff;}
+
+.header .nav li:hover {}
+.header .nav li:hover a {color: #fff;}
+
+.header .nav .navs {position: absolute; background: rgb(0, 0, 0, 0.9); width: 100%; display: none;text-align: center;z-index: 1;}
+.header .nav .navs li {font-size: 26px;}
+/* .header .nav .navs li:hover {background: #000000;} */
+.header .nav .navs li a {padding: 15px 20px; display: block; color: #fff;}
+.header .nav:hover li .navs {display: block;}
+.nav li a span{position: absolute;width: 0;height: 1px;background: #f5f5f5;left: 50%;bottom: 15px;transition: 0.5s;transform: translateX(-50%);}
+.nav li a:hover span{width: 60%;}
+
+.navs li a{color: #ffffff;padding: 20px 40px;display: block;position: relative;}
+.navs li a span{position: absolute;width: 0;height: 1px;background: #ffffff;left: 50%;bottom: 15px;transition: 0.5s;transform: translateX(-50%);}
+.navs li a:hover span{width: 52%;}
+
+.visual{width: 100%;margin: 54px 0 200px 0;}
+.visual .visual_box {width: 1541px; margin: 0 auto;height: 800px;display: grid;gap: 25px;grid-template-rows: 250px 250px 250px;grid-template-columns: 288px 437px 292px 449px;} 
+/* .visual .visual_box li{overflow: hidden;} */
+.visual .visual_box li:nth-child(1){grid-row: span 2;}
+.visual .visual_box li:nth-child(5){grid-column: span 2;}
+.visual .visual_box li:nth-child(7){grid-column: span 2;}
+.visual .visual_box li:nth-child(8){grid-column: span 2;}
+
+
+
+.section1{width: 100%;}
+.section1 .section1_box {margin: 0 auto;display: flex;flex-wrap: wrap;gap: 25px;justify-content: center;width: 1600px;}
+.section1 .section1_box li{height: 340px;width: 340px;border: 1px solid #fff;}
+.section1 .section1_box .b_box{background: #000;padding: 12px;}
+.section1 .section1_box .w_box{background: #fff;padding: 12px;}
+.section1 .section1_box .b_box a{color: #fff;display: block;display: flex;flex-direction: column;height: 100%;justify-content: space-between;}
+.section1 .section1_box .w_box a{color: #000;display: block;display: flex;flex-direction: column;height: 100%;justify-content: space-between;}
+
+.section1 .section1_box .section1_t1{font-size: 28px;} 
+.section1 .section1_box img{}
+.section1 .section1_box .section1_t2{font-size: 16px;}
+
+
+.banner{width: 100%;text-align: center;margin: 200px 0;}
+
+.section2{width: 100%;}
+.section2 ul{height: 635px;display: flex;}
+.section2 ul .ww_box{background: #fff;color: #000;width: 50%;height: 100%;display: flex;justify-content: center;align-items: center;}
+.section2 ul .bb_box{background: #000;color: #fff;width: 50%;height: 100%;display: flex;flex-direction: column;justify-content: space-between;}
+.section2 ul .bb_box .section2_t1{font-size: 43px;margin: 40px 0 40px 40px;line-height: 49px;width: 609px;height: 98px;}
+.section2 ul .bb_box .section2_t2{font-size: 30px;margin: 40px 0 40px 40px;line-height: 40px;width: 896px;height: 320px;}
+.section2 ul .bb_boxr{background: #000;color: #fff;width: 50%;height: 100%;display: flex;flex-direction: column;justify-content: space-between;align-items: end;}
+.section2 ul .bb_boxr .section2_t1r{font-size: 43px;margin: 40px 40px 40px 0;text-align: right;line-height: 49px;width: 609px;height: 98px;}
+.section2 ul .bb_boxr .section2_t2r{font-size: 30px;margin: 40px 40px 40px 0;text-align: right;line-height: 40px;width: 896px;height: 320px;}
+
+
+
+
+.section3{width: 100%;background-image: url(../img/setion3.jpg);background-position: center;background-repeat: no-repeat;width: 100%;height: 639px;background-size: cover;display: flex;justify-content: center;align-items: center;margin: 120px 0 200px 0;}
+.section3 .section3_box{width: 1199px;height: 449px;display: flex;flex-direction: column;gap: 29px;}
+.section3 .section3_box .visit{color: #fff;font-family:'Jasper Daniels';font-weight: 500;font-size: 31px;}
+.section3 .section3_box ul{display: flex;gap: 25px;align-items: center;}
+.section3 .section3_box ul li{background: rgb(0, 0, 0, 0.2);padding: 19px;} 
+.section3 .section3_box ul li a{width: 345px;height: 346px;display: block;display: flex;flex-direction: column;justify-content: space-between;}
+.section3 .section3_box ul li a .section3_t1{width: 345px;height: 99px;color: #fff;font-size: 29px;}
+.section3 .section3_box ul li a .section3_t2{width: 345px;height: 184px;color: #fff;font-size: 20px;}
+
+
+.footer{width: 100%;height: 630px;background-image: url(../img/footer_bg.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;display: flex;flex-direction: column;align-items: center;}
+.footer .footer_logo{margin: 46px 0 4px 0;height: 62px;}
+.footer .footer_logo a{display: block;height: 100%;} 
+.footer .footer_logo a img{}
+.footer .footer_t1{font-family:'Jasper Daniels';font-size: 22px;}
+.footer .footer_nav{display: flex;justify-content: center;margin: 34px 0 73px 0;width: 932px;}
+.footer .footer_nav li{width: 100px;height: 30px;text-align: center;line-height: 30px;display: flex;justify-content: center;flex-grow: 1;}
+.footer .footer_nav li a{display: block;padding: 0 27px;} 
+.footer .sns{display: flex;flex-direction:row;gap: 52px;}
+.footer .sns li{width: 41px;height: 41px;background: #262626;}
+.footer .sns li a{;height: 100%;display: flex;justify-content: center;align-items: center;}
+.footer .sns li a img{}
+.footer .footer_t2{margin-top: 73px;width: 100%;height: 210px;line-height: 35px;text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+/* 비주얼 이미지 꺠진거같음 */
+/* 피그마에서 익스포트할떄 마스크레이어때문일수있나? */
+
+/* 비주얼 플렉스로 안되는거같음 */
